@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex05</title>
+</head>
+<body>
+<script>
+    var a=["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    var b=["Ursa Minor", "Torurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    var name=prompt("Moi nhap vao ten cua idol");
+    var result=horoscope(name);
+    document.write("horoscope cua idol la: "+result);
+    function horoscope(value) {
+        var index=a.indexOf(value,0)
+        if (index==-1) {
+            alert("khong tim thay idol nay");
+        } else {
+            return b[index];
+        }
+    }
+</script>
+</body>
+</html>
